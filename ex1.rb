@@ -63,6 +63,10 @@ my_bank_account.balance(4000)
     @balance -= amount
   end
 
+  def gain_interest(rate)
+    @balance = @balance * rate
+  end
+
 end
 
 
@@ -71,3 +75,4 @@ puts my_account
 
 puts my_account.deposit(900)
 puts my_account.withdraw(4200)
+puts my_account.gain_interest(1.1)
