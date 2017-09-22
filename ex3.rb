@@ -55,11 +55,12 @@ kobe = Player.new
 puts shaq
 puts kobe
 
+=begin
+
 puts shaq.current_health
 puts kobe.level_up
 puts kobe.level_up
 puts kobe.current_lives
-puts "!!!!!"
 puts kobe.collect_treasure
 puts kobe.collect_treasure
 puts kobe.collect_treasure
@@ -68,7 +69,6 @@ puts kobe.collect_treasure
 puts kobe.collect_treasure
 puts kobe.collect_treasure
 puts kobe.collect_treasure
-puts "!!!!!"
 puts kobe.current_lives
 puts kobe.collect_treasure
 puts kobe.collect_treasure
@@ -81,7 +81,7 @@ puts kobe.collect_treasure
 puts kobe.collect_treasure
 puts kobe.collect_treasure
 puts kobe.current_lives
-puts "!!!!!!!!!"
 puts kobe.do_battle(40)
 puts kobe.current_health
 puts kobe.current_lives
+=end 
