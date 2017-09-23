@@ -56,7 +56,6 @@ puts shaq
 puts kobe
 
 =begin
-
 puts shaq.current_health
 puts kobe.level_up
 puts kobe.level_up
@@ -84,4 +83,4 @@ puts kobe.current_lives
 puts kobe.do_battle(40)
 puts kobe.current_health
 puts kobe.current_lives
-=end 
+=end
