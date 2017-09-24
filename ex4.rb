@@ -7,6 +7,10 @@ def initialize(name)
 
 end
 
+
+#we initially begin with the min quota of 50
+#as paperboy makes deliveries, the minimum of 50 is added to the @experience
+#@experience is the number of papers delivered in history of paperboy's life 
 def quota
 #should calculate and return quota for next delivery
 #quota = 50+ 0.5*experience
@@ -17,6 +21,12 @@ def quota
   quota
 
 end
+
+#this method tkes the start and end address
+#subtracts them, and then compares the number to the quota
+#depending on whether it is larger or smaller than quota, we will obtain delivery earnings
+#finally, @experience and @earnings are updated. @experience is the total papers delivered
+#while @earnings is the total money earned
 
 def deliver(start_address, end_address)
   #provides the amount of money earned
@@ -36,10 +46,12 @@ def deliver(start_address, end_address)
 
 end
 
+#reader
 def earnings ()
   puts "My total earnings are #{@earnings}"
 end
 
+#reader
 def report()
 #needs to return a string related to performance
 puts "I am #{@name} and I have delivered #{@experience} papers and have earned $#{@earnings}!"
