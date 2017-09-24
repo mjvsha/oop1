@@ -2,7 +2,7 @@ class Paperboy
 
 def initialize(name)
   @name = name
-  @experience = quota
+  @experience = 0
   @earnings= deliver
 
 end
@@ -10,7 +10,44 @@ end
 def quota
 #should calculate and return quota for next delivery
 #quota = 50+ 0.5*experience
-quota = 50
+#first time
+minimum = 50
+quota = minimum + 0.5*@experience
+
+end
+
+def(start_address, end_address)
+  #provides the amount of money earned
+  house_number.to_f = end_address-start_address
+
+  if house_number > quota
+    earnings = (house_number -quota)*0.50 + house_number*0.25
+
+
+
+  #should update experience, aka the number of papers deliverd
+  @experience = @experience + house_number
+
+  return money earned
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,6 +108,6 @@ within the initialize method of the paperboy class, we are gonna have our 3 inst
 
 we also have 3 instance methods in order to retrieve the status of the object's instance varables
 quota-->this method needs to tell us about the min number of papers required
-to 
+to
 deliver(start_address, end_address)
 report-->should puts out a statement of @name, @experience, @earnings
